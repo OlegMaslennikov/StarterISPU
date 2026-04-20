@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_GUID: 13aaea4fc6052e34781f99df3b7f6dca
+  m_SerializeEntries:
+  - m_GUID: 12fc9806c33fb8347931348f18568786
+    m_Address: CatsPanel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 513c4ce9fd8ca2d4bb5db46780293d9b
+    m_Address: Assets/_Stuff/679355__kjartan_abel__pawsome-vibes-get-your-groove-on-with-meow-meow.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 86acd0adf1158094e9d3a44a6ab989e3
+    m_Address: Assets/_Stuff/paw.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8d1ccf08a8484134893d30f6d0dae330
+    m_Address: Assets/BlueMaterial.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b551c287c87414c4bac3f30434782e70
+    m_Address: Assets/RedMaterial.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c3465b4bb2378c04b918f9f8eaaeccfa
+    m_Address: Assets/_Game/Prefabs/LevelUI.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c6af75b5d0550d94e8519faf679ab109
+    m_Address: Assets/_Game/Prefabs/SaveLoadUI.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e08060528fd662341bf830e1845b87f2
+    m_Address: Assets/_Stuff/animal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e92a94eefc390564eb599dfd448c1a25
+    m_Address: Assets/Meeple.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ff991e3beac677b4eb6e0fc83be3d02a
+    m_Address: Assets/_Stuff/laptop.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 57122084ad02a014ea52a6e8ea3bdecf, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 82ca6656364d40545b59135c9bffee40, type: 2}
+    - {fileID: 11400000, guid: c70cd572db1fe3d46b7037c8a4fedf9a, type: 2}
