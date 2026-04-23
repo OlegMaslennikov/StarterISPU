@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.AddressableAssets;
 using System.Threading.Tasks;
-using UnityEngine.Serialization;
+using Cysharp.Threading.Tasks;
 using Zenject;
 
 public class LevelEntryPoint : MonoBehaviour
@@ -41,7 +41,7 @@ public class LevelEntryPoint : MonoBehaviour
     
     async Task<GameObject> LoadAndInstantiate(AssetReference assetRef)
     {
-        await Task.Delay(500);
+        await UniTask.Delay(500);
         var handle = Addressables.LoadAssetAsync<GameObject>(assetRef);
         await handle.Task; 
         return _container.InstantiatePrefab(handle.Result);
@@ -49,7 +49,7 @@ public class LevelEntryPoint : MonoBehaviour
     
     async Task<GameObject> LoadFromAddress(string address)
     {
-        await Task.Delay(500);
+        await UniTask.WaitForSeconds(1);
         var handle = Addressables.LoadAssetAsync<GameObject>(address);
         await handle.Task;
         return _container.InstantiatePrefab(handle.Result);

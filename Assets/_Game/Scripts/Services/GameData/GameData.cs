@@ -4,12 +4,21 @@ using UnityEngine;
 [Serializable]
 public class GameData 
 {
-    public int Health;
-    public int Coins;
-    private PlayerStartDataSO _playerStartDataSo;
+    [SerializeField]
+    private int _health;
     
-    public GameData(PlayerStartDataSO playerStartDataSo)
-    {
-        _playerStartDataSo = playerStartDataSo;
+    [SerializeField]
+    private int _coins;
+    
+    public int Health 
+    { 
+        get => _health;
+        set => _health = value;
+    }
+    
+    public int Coins 
+    { 
+        get => _coins;
+        set => _coins = value;
     }
 }
