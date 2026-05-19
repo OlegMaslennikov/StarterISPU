@@ -1,0 +1,30 @@
+{
+  "Achievements": [
+    {
+      "Id": "button_master",
+      "IsUnlocked": true,
+      "UnlockedAt": "2026-05-19T21:07:26.18914+03:00"
+    },
+    {
+      "Id": "high_speed",
+      "IsUnlocked": true,
+      "UnlockedAt": "2026-05-19T21:07:23.490825+03:00"
+    },
+    {
+      "Id": "difficulty_hard_master",
+      "IsUnlocked": true,
+      "UnlockedAt": "2026-05-19T21:07:33.654222+03:00"
+    },
+    {
+      "Id": "difficulty_expert_master",
+      "IsUnlocked": true,
+      "UnlockedAt": "2026-05-19T21:07:38.187394+03:00"
+    },
+    {
+      "Id": "secret_finder",
+      "IsUnlocked": true,
+      "UnlockedAt": "2026-05-19T21:07:27.740898+03:00"
+    }
+  ],
+  "SaveTime": "2026-05-19T21:07:38.18742+03:00"
+}

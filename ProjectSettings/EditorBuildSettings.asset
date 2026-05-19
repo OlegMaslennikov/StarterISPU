@@ -14,6 +14,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level1.unity
     guid: aab315c2c0ae3d54c88324d70316b269
+  - enabled: 1
+    path: Assets/Scenes/FactoryExample.unity
+    guid: 528f3e914a3b299469eb2e4d766b520b
+  - enabled: 1
+    path: Assets/Scenes/Achievements.unity
+    guid: 805fa8e0821854233af08369e933cfe7
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: b75e7407b55e98d4bad9ee5abf22c46d, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

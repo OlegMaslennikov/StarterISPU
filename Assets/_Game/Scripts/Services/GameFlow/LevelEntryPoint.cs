@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.AddressableAssets;
 using System.Threading.Tasks;
 using Cysharp.Threading.Tasks;
@@ -8,7 +9,7 @@ public class LevelEntryPoint : MonoBehaviour
 {
     [SerializeField] private AssetReference uiLevelPanelPrefab;
     [SerializeField] private AssetReference uiSaveLoadPrefab;
-    [SerializeField] private string uiCatsPrefabName; 
+    [SerializeField] private string uiCatsPrefabName;
     private DiContainer _container;
     
     async void Start()
@@ -28,7 +29,6 @@ public class LevelEntryPoint : MonoBehaviour
         
         GameObject levelPanel = await LoadAndInstantiate(uiLevelPanelPrefab);
         levelPanel.transform.SetParent(transform);
-        
         
         GameObject saveLoadPanel = await LoadAndInstantiate(uiSaveLoadPrefab);
         saveLoadPanel.transform.SetParent(levelPanel.transform);
@@ -53,5 +53,13 @@ public class LevelEntryPoint : MonoBehaviour
         var handle = Addressables.LoadAssetAsync<GameObject>(address);
         await handle.Task;
         return _container.InstantiatePrefab(handle.Result);
+    }
+
+    private void OnDestroy()
+    {
+        Addressables.Release(uiLevelPanelPrefab);
+        Addressables.Release(uiSaveLoadPrefab);
+        Addressables.Release(uiCatsPrefabName);
+        
     }
 }

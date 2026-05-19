@@ -7,6 +7,7 @@ public class MainMenuButtons : MonoBehaviour
     [SerializeField] private Button startGameButton;
     [SerializeField] private Button loadButton;
     [SerializeField] private Button optionsButton;
+    [SerializeField] private Button achievementsButton;
     private StateManager _stateManager;
     private SceneChanger _sceneChanger;
     private SaveLoadManager _saveLoadManager;
@@ -16,7 +17,8 @@ public class MainMenuButtons : MonoBehaviour
     {
         startGameButton.onClick?.AddListener(StartGame);
         loadButton.onClick?.AddListener(LoadGame);
-        optionsButton.onClick?.AddListener(ShowOptions);
+        optionsButton.onClick?.AddListener(OpenFactroryExample);
+        achievementsButton.onClick?.AddListener(LoadAchievementsScene);
     }
     [Inject]
     public void Construct(StateManager stateManager, SceneChanger sceneChanger, SaveLoadManager saveLoadManager, GameDataController gameDataController)
@@ -41,14 +43,21 @@ public class MainMenuButtons : MonoBehaviour
         _sceneChanger.ChangeScene((int)ScenesInProject.Level1);
     }
 
-    public void ShowOptions()
+    public void OpenFactroryExample()
     {
-        Debug.Log("Options");
+        _stateManager.StartState(new GameplayState());
+        _sceneChanger.ChangeScene((int)ScenesInProject.FactoryExample);
     }
+
+    public void LoadAchievementsScene()
+    {
+        _sceneChanger.ChangeScene((int)ScenesInProject.Achievements);
+    }
+    
     private void OnDestroy()
     {
         startGameButton.onClick?.RemoveListener(StartGame);
         loadButton.onClick?.RemoveListener(LoadGame);
-        optionsButton.onClick?.RemoveListener(ShowOptions);
+        optionsButton.onClick?.RemoveListener(OpenFactroryExample);
     }
 }

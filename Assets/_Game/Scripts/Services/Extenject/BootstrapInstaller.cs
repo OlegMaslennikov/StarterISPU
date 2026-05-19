@@ -1,3 +1,4 @@
+using _Game.Scripts.Services.Achievements;
 using UnityEngine;
 using Zenject;
 
@@ -11,10 +12,12 @@ public class BootstrapInstaller : MonoInstaller
         // AsSingle - создаст один экземпляр для всего приложения (синглтон)
         Container.BindInstance(_playerStartData).AsSingle();
         
+        
         // Bind<T> - регистрирует тип, Zenject сам создаст экземпляр через конструктор
         // NonLazy - объект создастся сразу при старте, а не при первом использовании
         Container.Bind<GameData>().AsSingle().NonLazy();
         Container.Bind<GameDataController>().AsSingle().NonLazy();
+        Container.Bind<AchievementManager>().AsSingle().NonLazy();
         
         Container.Bind<SaveLoadManager>().AsSingle().NonLazy();
         Container.Bind<StateManager>().AsSingle().NonLazy();

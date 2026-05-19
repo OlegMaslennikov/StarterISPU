@@ -20,6 +20,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 35f1fe88421d944f7a67b88648ad9ee2
+    m_Address: Assets/_Game/Prefabs/CubeProduct.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 513c4ce9fd8ca2d4bb5db46780293d9b
     m_Address: Assets/_Stuff/679355__kjartan_abel__pawsome-vibes-get-your-groove-on-with-meow-meow.wav
     m_ReadOnly: 0
@@ -32,6 +37,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8d1ccf08a8484134893d30f6d0dae330
     m_Address: Assets/BlueMaterial.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8e647212c73f9436eb9a726faf0b7bb0
+    m_Address: Units/Capsule
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -52,6 +62,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e08060528fd662341bf830e1845b87f2
     m_Address: Assets/_Stuff/animal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e0c3b4a85a57340c0b2a10c29e98c6b0
+    m_Address: Assets/_Game/Prefabs/SphereProduct.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
