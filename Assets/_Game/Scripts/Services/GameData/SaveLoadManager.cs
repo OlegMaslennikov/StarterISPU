@@ -11,7 +11,6 @@ public class SaveLoadManager
     
     private readonly string saveFileName = "gameData.json";
 
-    private string SavePath => Path.Combine(Application.persistentDataPath, saveFileName);
 
     [Inject]
     public SaveLoadManager(PlayerStartDataSO StartDataSo, GameData GameData, GameDataController gameDataController)
@@ -26,7 +25,7 @@ public class SaveLoadManager
         try
         {
             string json = JsonUtility.ToJson(_gameData, true);
-            File.WriteAllText(SavePath, json);
+            File.WriteAllText(saveFileName, json);
         }
         catch (Exception e)
         {
@@ -36,7 +35,7 @@ public class SaveLoadManager
 
     public void GameLoad()
     {
-        if (!File.Exists(SavePath))
+        if (!File.Exists(saveFileName))
         {
             Debug.LogWarning("Save file not found, creating new gameData.");
             CreateDefaultProfile();
@@ -44,7 +43,7 @@ public class SaveLoadManager
             return;
         }
 
-        string json = File.ReadAllText(SavePath);
+        string json = File.ReadAllText(saveFileName);
         GameData loadedData = JsonUtility.FromJson<GameData>(json);
 
         if (loadedData == null)
@@ -61,9 +60,9 @@ public class SaveLoadManager
 
     public void DeleteSave()
     {
-        if (File.Exists(SavePath))
+        if (File.Exists(saveFileName))
         {
-            File.Delete(SavePath);
+            File.Delete(saveFileName);
             Debug.Log("Save file deleted.");
         }
     }

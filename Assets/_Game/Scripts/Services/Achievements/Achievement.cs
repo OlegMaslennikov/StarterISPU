@@ -37,7 +37,7 @@ namespace _Game.Scripts.Services.Achievements
             IsUnlocked = true;
             UnlockedAt = DateTime.Now;
             AchievementManager.AchievementUnlockedHandler(this);           
-            Debug.Log($"🏆 Achievement Unlocked: {Name} - {Description}");
+            Debug.Log($"Achievement Unlocked: {Name} - {Description}");
         }
     }
 }
